@@ -1,28 +1,27 @@
-# This workflow registers a new application deployment with Raygun.
-#
-# The workflow is triggered when a tag with the specified prefix
-# is pushed to GitHub. The tag should be formatted as a prefix
-# followed by the version number. For example: "prod/1.0.0"
+# Workflow to register a new application deployment with Raygun.
+
+# The workflow is triggered when a tag with the specified prefix is pushed to
+# GitHub. The tag should be formatted as a prefix followed by the version
+# number. For example: "prod/1.0.0"
 #
 # To use this workflow, you must:
 #
-# 1. Make sure the tag prefix is set correctly below (in two
-#    different places). The default is "prod/".
+# 1. Make sure the tag prefix is set correctly below. The default is "prod/".
 #
 # 2. Add two "Action secrets" in the GitHub repository settings:
 #
 #    * RAYGUN_APIKEY = the API key for the Raygun project
-#    * RAYGUN_AUTHTOKEN = an "External Access Token" for your user
-#      account generated at https://app.raygun.com/user
+#    * RAYGUN_AUTHTOKEN = an "External Access Token" for your user account
+#      (generated at https://app.raygun.com/user)
 #
-# Learn more about Raygun Deployment Tracking at
+# Learn more about Raygun Deployment Tracking at:
 # https://raygun.com/documentation/product-guides/deployment-tracking/overview/
 
 name: Raygun Deployment Tracking
 
 on:
   push:
-    # Update this line with the desired tag prefix, e.g., "prod/"
+    # Update this line with the desired tag prefix, e.g., "prod/*"
     tags: prod/*
 
 jobs:
@@ -31,8 +30,7 @@ jobs:
     steps:
       - name: Get the version number
         id: get_version
-        # Update the end of this line with the desired tag prefix, e.g., "prod/"
-        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/prod/}
+        run: echo ::set-output name=VERSION::${GITHUB_REF##*/}
 
       - name: Send to the Raygun Deployments API
         id: send_deployment

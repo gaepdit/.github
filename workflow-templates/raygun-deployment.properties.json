@@ -1,0 +1,5 @@
+{
+  "name": "Raygun Deployment Tracking Workflow",
+  "description": "Automatically adds a new deployment to Raygun's deployment tracking tools.",
+  "iconName": "epd-icon"
+}

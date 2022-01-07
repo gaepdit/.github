@@ -1,4 +1,4 @@
-# Georgia EPD-IT ![United States of America](usa.png) ![Georgia](georgia.png)
+# Georgia EPD-IT ![United States of America](https://raw.githubusercontent.com/gaepdit/.github/main/profile/usa.png) ![Georgia](https://raw.githubusercontent.com/gaepdit/.github/main/profile/georgia.png)
 
 Hi there! 👋 We're the IT department at the [Georgia Environmental Protection Division](https://epd.georgia.gov/).
 

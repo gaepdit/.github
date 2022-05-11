@@ -1,4 +1,0 @@
-Contact: mailto:support@gaepd.zendesk.com
-Policy: https://github.com/gaepdit/.github/blob/main/SECURITY.md
-
-Expires: 2023-01-31T17:00:00.000Z

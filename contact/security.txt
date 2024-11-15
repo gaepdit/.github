@@ -1,0 +1,14 @@
+# Georgia Environmental Protection Division IT Department (EPD-IT)
+
+# Where to report security vulnerabilities to EPD-IT:
+Contact: mailto:support@gaepd.zendesk.com
+Preferred-Languages: en
+
+# Our security policy:
+Policy: https://github.com/gaepdit/.github/blob/main/SECURITY.md
+
+# Status of this document:
+Expires: 2024-11-16T04:59:00.000Z
+Canonical: https://raw.githubusercontent.com/gaepdit/.github/refs/heads/main/contact/security.txt
+
+# (Please see https://securitytxt.org/ for details of the specification of this file.)
